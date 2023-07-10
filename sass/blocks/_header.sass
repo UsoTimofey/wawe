@@ -1,0 +1,44 @@
+.header
+    text-align: center
+    padding-top: 50px
+    background: url('../img/promo/bg.png') center / cover no-repeat
+    min-height: 100vh
+    &__top
+        padding: 20px 0
+        position: fixed
+        opacity: 60%
+        width: 100%
+        background-color: #0D302C
+        z-index: 1
+        transition: .3s
+        &:hover
+            opacity: 100%
+        &-inner
+            display: flex
+            justify-content: space-between
+            align-items: center
+    .menu
+        &__list
+            display: flex
+            gap: 45px
+            align-items: center
+            list-style-type: none
+        a
+            padding: 0 9px 9px
+            font-size: 24px
+            text-decoration: none
+            color: #fff
+            &:hover
+                border-bottom: 1px solid $main-color
+                    
+    &__title
+        margin-top: 260px
+        color: #0D302C
+        font-family: 'Raleway', sans-serif
+        font-size: 200px
+        font-weight: 700
+    &__subtitle
+        font-size: 24px
+    &__icon
+        margin-top: 120px
+        
