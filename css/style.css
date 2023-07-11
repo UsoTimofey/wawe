@@ -15,24 +15,50 @@
 
 .title {
   position: relative;
+  left: 50%;
   margin-bottom: 100px;
-  text-align: center;
+  display: inline-block;
   color: #01353E;
   font-family: Raleway;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
   letter-spacing: 0.6px;
+  transform: translateX(-50%);
 }
 .title::after {
   content: "";
   position: absolute;
-  transform: rotate(-55deg);
-  bottom: -10px;
-  right: 90px;
-  width: 70px;
-  height: 8px;
+  transform: rotate(-55deg) skew(36deg);
+  bottom: 0px;
+  right: -62px;
+  width: 62px;
+  height: 7px;
   background-color: #00B2A0;
+}
+
+.top {
+  padding: 100px 0;
+  background: url("../img/top/bg.jpg") right/50% no-repeat;
+}
+.top__inner {
+  max-width: 511px;
+  margin-right: auto;
+}
+.top__title {
+  width: 300px;
+}
+.top__text p {
+  color: #242121;
+  font-family: Roboto Condensed;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0.6px;
+}
+.top__text p:not(:last-child) {
+  margin-bottom: 25px;
 }
 
 .header {
@@ -118,7 +144,7 @@
 .get__point {
   display: flex;
   gap: 10px;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .get__subtitle {
   color: #242121;
